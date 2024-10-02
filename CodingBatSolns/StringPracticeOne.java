@@ -34,7 +34,6 @@ Given a string of even length, return the first half. So the string "WooHoo" yie
 firstHalf("WooHoo") → "Woo"
 firstHalf("HelloThere") → "Hello"
 firstHalf("abcdef") → "abc"
-
   **/
 public String firstHalf(String str) {
   int lengthOfString = str.length();
