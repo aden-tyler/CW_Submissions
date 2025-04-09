@@ -86,13 +86,16 @@ public class TwoDArrayIntroAssignment {
 		for ( int j = 0 ; j <= arr.length-1 ; j++)
 			System.out.println(arr[j][0]);
 	}
-	//10. Create a method that is passed a 2-D array of ints and one by one prints out each element in row-major order. 
+	//10. Create a method that is passed a 2-D array of ints and one by one prints out each element in row-major order.
 	public static void printRowMajorOrder(int[][] arr)
 	{
+		// This for loop checks through the rows first.
 		for ( int i = 0 ; i <= arr.length-1 ; i++)
 		{
+			// This for loop then checks through the columns.
 			for ( int j = 0 ; j <= arr[0].length-1 ; j++)
 			{
+				// This print statement prints out the coordinate that both for loops are at.
 				System.out.println (arr [ i ][ j ]);
 			}
 		}
@@ -101,10 +104,13 @@ public class TwoDArrayIntroAssignment {
 	//11. Create a method that is passed a 2-D array of ints and one by one prints out each element in column-major order. 
 	public static void printColumnMajorOrder(int[][] arr)
 	{
+		// This for loops checks through the columns first.
 		for ( int i = 0 ; i <= arr[0].length-1 ; i++)
 		{
+			// This for loop then checks through the rows.
 			for ( int j = 0 ; j <= arr.length-1 ; j++)
 			{
+				// This print statement prints out the coordinate that both for loops are at.
 				System.out.println (arr [ j ][ i ]);
 			}
 		}
